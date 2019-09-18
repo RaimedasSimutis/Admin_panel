@@ -1,0 +1,78 @@
+.dashboard-container {
+    padding-left: $sidenav-width;
+
+    &__welcome-bar {
+        height: auto;
+        margin: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: gray;
+            font-weight: 700;
+        }
+    }
+
+    &__stats-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px 10px;
+
+        &__card {
+            background-color: #ffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            flex-grow: 1;
+            padding: 0 20px;
+            margin: 0 10px;
+            box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 0.75);
+
+            .stats {
+                text-align: right;
+
+                h3 {
+                    font-size: 28px
+                }
+            }
+
+            .card-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 10px;
+
+                svg {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+
+            .card-img-visits {
+                border: 5px solid rgb(1, 99, 1);
+                background-color: green;
+            }
+
+            .card-img-revenue {
+                border: 5px solid rgb(1, 1, 134);
+                background-color: blue;
+            }
+
+            .card-img-sales {
+                border: 5px solid rgb(128, 2, 2);
+                background-color: red;
+            }
+
+            .card-img-conversion {
+                border: 5px solid rgb(82, 1, 82);
+                background-color: purple;
+            }
+        }
+    }
+}

@@ -1,8 +1,28 @@
 @import '_variables.scss';
-@import '_navbar.scss';
 @import 'fonts.scss';
+@import '_navbar.scss';
+@import '_sidenav.scss';
+@import '_dashboard.scss';
+
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
