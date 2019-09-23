@@ -1,0 +1,195 @@
+.dashboard-container {
+    padding-left: $sidenav-width;
+
+    &__welcome-bar {
+        height: auto;
+        margin: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: gray;
+            font-weight: 700;
+        }
+    }
+
+    &__stats-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px 10px;
+
+        &__card {
+            background-color: #ffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            flex-grow: 1;
+            padding: 0 20px;
+            margin: 0 10px;
+            box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 0.75);
+
+            .stats {
+                text-align: right;
+
+                h3 {
+                    font-size: 28px
+                }
+            }
+
+            .card-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 10px;
+
+                svg {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+
+            .card-img-visits {
+                border: 5px solid rgb(1, 99, 1);
+                background-color: green;
+            }
+
+            .card-img-revenue {
+                border: 5px solid rgb(1, 1, 134);
+                background-color: blue;
+            }
+
+            .card-img-sales {
+                border: 5px solid rgb(128, 2, 2);
+                background-color: red;
+            }
+
+            .card-img-conversion {
+                border: 5px solid rgb(82, 1, 82);
+                background-color: purple;
+            }
+        }
+    }
+
+    .card-reusable {
+        padding: 20px;
+        margin: 0 10px;
+        
+        background-color: #ffff;
+        box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 0.75);
+        border-radius: 3px;
+
+        h4 {
+            font-size: 15px;
+            color: gray;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+
+    &__cards-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 10px;
+
+        .card1{
+            flex-grow: 1;
+            height: 100px;
+        }
+        .card2{
+            flex-grow: 1;
+            height: 100px;
+        }
+        .card3{
+            flex-grow: 1;
+            height: 100px;
+        }
+
+        
+    }
+
+    &__table-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 10px;
+
+        .table-left {
+            flex-grow: 2;
+            font-size: 15px;
+            margin: 20px 0 0 0;
+
+            h5 {
+                font-size: 12px;
+                color: gray;
+                
+            }
+
+        }
+
+        .table-right{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0 0 0;
+
+            &__card {
+                display: flex;
+                margin-bottom: 20px;
+
+                
+                .table-right-img{
+                    //display: flex;
+                    //justify-content: center;
+                    //align-items: center;
+                    //background-color: red;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+    
+                    
+                }
+
+                .table-right-desc{
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                    p{
+                        font-size: 12px;
+                    }
+
+                    .p1 {
+                        color: red;
+                    }
+                    .p2 {
+                        color: gold;
+                    }
+                    .p3 {
+                        color: green;
+                    }
+                }
+
+                
+
+
+
+            }
+
+            
+
+            
+            
+        }
+        
+    }
+}

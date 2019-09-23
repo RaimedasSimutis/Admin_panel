@@ -2,6 +2,10 @@ nav {
     background-color: $main-color;
     display: flex;
     height: $nav-height;
+    //position: fixed;
+    //overflow: auto;
+    position: sticky;
+    top: 0;
     
 
 }
