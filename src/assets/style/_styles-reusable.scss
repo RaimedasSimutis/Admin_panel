@@ -1,0 +1,31 @@
+.page-container {
+    padding-left: $sidenav-width;
+}
+
+.upper-dir-bar {
+    height: auto;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: gray;
+        font-weight: 700;
+    }
+}
+
+.card-reusable {
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #ffff;
+    box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+
+    h4 {
+        font-size: 15px;
+        color: gray;
+        margin: 0;
+        font-weight: 700;
+    }
+}

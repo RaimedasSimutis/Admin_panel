@@ -1,9 +1,12 @@
 @import './vendor/bootstrap';
 @import '_variables.scss';
-@import 'fonts.scss';
+@import '_fonts.scss';
+@import '_styles-reusable';
 @import '_navbar.scss';
 @import '_sidenav.scss';
 @import '_dashboard.scss';
+@import '_profile.scss';
+@import '_extras-pricing';
 
 
 
@@ -17,7 +20,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     margin: 0;
 }
 

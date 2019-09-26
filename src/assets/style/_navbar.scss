@@ -1,12 +1,16 @@
-nav {
+.main-nav {
     background-color: $main-color;
     display: flex;
     height: $nav-height;
-    //position: fixed;
-    //overflow: auto;
     position: sticky;
     top: 0;
+    z-index: 1000;
     
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
 
 }
 
@@ -38,15 +42,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 81%;
 
     &__left {
+        position: relative;
         display: flex;
         align-items: center;
-        svg{
-            padding: 0 20px 0 12px;
+
+        .menu-icon{
+            margin: 0 20px 0 12px;
         }
 
+        .search-icon {
+            position: absolute;
+            right: 6px;
+            top: 7px;
+            fill: #6573C4;
+        }
         input {
             border: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.1);
@@ -78,10 +90,7 @@ nav {
             height: 36px;
         }
     }
-}
 
-svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
 }
+    
+
