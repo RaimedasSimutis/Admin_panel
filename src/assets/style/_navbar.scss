@@ -35,6 +35,19 @@
     svg {
         margin-right: 10px;
     }
+
+    &.sidenav-hide {
+        width: $sidenav-width-hide;
+
+        span {
+            display: none;
+        }
+
+        svg {
+            margin-right: 12px;
+        }
+
+    }
 }
 
 
@@ -43,6 +56,10 @@
     justify-content: space-between;
     align-items: center;
     width: 81%;
+
+    &.sidenav-hide {
+        width: 93%;
+    }
 
     &__left {
         position: relative;

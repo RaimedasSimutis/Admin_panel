@@ -1,6 +1,6 @@
 <nav class="main-nav">
-    <div class="nav-logo">
-        <a href="">
+    <div class="nav-logo" data-sidenav="">
+        <a href="#">
             <svg>
                 <use xlink:href="#logo"></use>
             </svg>
@@ -8,11 +8,13 @@
             <span>LOGO</span>
         </a>
     </div>
-    <div class="nav-menu">
+    <div class="nav-menu" data-sidenav="">
         <div class="nav-menu__left">
-            <svg class="menu-icon">
-                <use xlink:href="#menu"></use>
-            </svg>
+            <a href="#" data-toggle="sidenav">
+                <svg class="menu-icon">
+                    <use xlink:href="#menu"></use>
+                </svg>
+            </a>
             <div>
                 <input type="text" placeholder="Search...">
                 <a href="">  
@@ -25,7 +27,7 @@
 
         <ul class="nav-menu__list">
             <li>
-                <a href="">
+                <a href="" data-toggle="dots">
                     <svg>
                         <use xlink:href="#dots"></use>
                     </svg>
@@ -33,7 +35,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#" data-toggle="notification">
                     <svg>
                         <use xlink:href="#notification"></use>
                     </svg>
